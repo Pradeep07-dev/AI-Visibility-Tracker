@@ -36,8 +36,8 @@ A minimal **AI visibility tracker** tool to track how often brands appear in AI-
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Pradeep07-dev/AI-Visibility-Tracker.git
+cd ai-visibility-tracker
 
 ```
 
