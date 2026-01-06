@@ -4,16 +4,19 @@ const analyzeVisibility = async (
   category: string,
   brands: string[]
 ): Promise<AnalyzeResponse> => {
-  const result = await fetch("http://localhost:3000/api/analyze", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      category,
-      brands,
-    }),
-  });
+  const result = await fetch(
+    "https://ai-visibility-tracker-frxa.onrender.com",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        category,
+        brands,
+      }),
+    }
+  );
 
   if (!result.ok) {
     throw new Error("Failed to analyze visibility.");
