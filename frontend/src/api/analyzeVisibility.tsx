@@ -5,7 +5,7 @@ const analyzeVisibility = async (
   brands: string[]
 ): Promise<AnalyzeResponse> => {
   const result = await fetch(
-    "https://ai-visibility-tracker-frxa.onrender.com",
+    "https://ai-visibility-tracker-frxa.onrender.com/api/analyze",
     {
       method: "POST",
       headers: {
